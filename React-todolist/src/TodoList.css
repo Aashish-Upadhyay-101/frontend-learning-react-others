@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Patrick+Hand&display=swap");
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Patrick Hand', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-div {
+  background-color: #101820ff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-div {
+  height: 80vh;
+  width: 30vw;
+  background-color: #fee715ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5),
+    0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+
+  overflow: scroll;
+}
+
+h1 {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(48, 65, 43);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 1.6rem;
+  font-family: "Alegreya", serif;
+  letter-spacing: 2px;
+}
+
+.add-item {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  height: 6vh;
+  width: 60%;
+  border: none;
+  background-color: #fee715ff;
+  font-size: 1.3rem;
+  font-family: "patrick hand";
+  color: #101820ff;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid rgb(48, 65, 43);
+  outline: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Add-btn {
+  height: 6vh;
+  width: 10%;
+  color: white;
+  font-family: "Alegreya";
+  background-color: rgb(48, 65, 43);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  float: left;
+  margin: 1rem;
+  transition: all 0.35s ease;
+}
+
+.Add-btn:hover {
+  background-color: rgb(65, 139, 58);
+  color: #fee715ff;
+}
+
+ol {
+  height: 70%;
+  width: 100%;
+  list-style: none;
+}
+
+li {
+  margin: 0.5rem 1rem 1rem 2.2rem;
+}
+
+.remove-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  line-height: 1.01rem;
+  outline: none;
+  border: none;
+  color: rgb(207, 73, 73);
+  background-color: rgb(48, 65, 43);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: "patrick hand";
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.remove-btn:hover {
+  background-color: rgb(207, 73, 73);
+  color: white;
+}
+
+span {
+  font-family: "patrick hand", cursive;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 771px) {
+  html {
+    font-size: 95%;
+  }
+
+  .center-div {
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .Add-btn {
+    width: 3rem;
+  }
+}
